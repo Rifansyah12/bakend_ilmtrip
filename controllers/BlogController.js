@@ -33,7 +33,7 @@ export const getBlogById = async (req, res) => {
     const blogWithImageUrl = {
       ...blog.toJSON(),
       image: blog.image
-        ? `http://localhost:5000/public/images/blogs/${blog.image}`
+        ? `https://api.ilmtrip.com/public/images/blogs/${blog.image}`
         : null,
     };
 
