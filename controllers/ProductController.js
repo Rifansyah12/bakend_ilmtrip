@@ -52,7 +52,7 @@ export const getProduct = async (req, res) => {
     // Tambahkan URL lengkap untuk gambar
     const modifiedResponse = response.map((item) => ({
       ...item.dataValues,
-      foto: `http://localhost:5000/images/product/${item.foto}`,
+      foto: `https://api.ilmtrip.com/images/product/${item.foto}`,
     }));
 
     res.status(200).json(modifiedResponse);
